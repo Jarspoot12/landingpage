@@ -1,0 +1,229 @@
+:root {
+  --cursiva: "Dancing Script", cursive;
+  --negrita: "Poppins", sans-serif;
+  --boton: "Source Code Pro", monospace;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 36, 59) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  margin: 0;
+}
+.cont-logo {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #0c0b0c;
+}
+.logo {
+  width: 10rem;
+  height: 4.5rem;
+  background-image: url(https://logodownload.org/wp-content/uploads/2014/07/adidas-logo-branco.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cont1 {
+  height: 16rem;
+  width: 13rem;
+  position: absolute;
+  left: 20%;
+  top: 4rem;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/46/ba/88/46ba88d479144c9b7a33acbc502ae142--yeezy-boost-male-fashion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 35px 35px 64px #bb102cd8, -35px -34px 64px #24c93aab;
+  z-index: -3;
+}
+.cont2 {
+  height: 16rem;
+  width: 13rem;
+  position: absolute;
+  right: 20%;
+  top: 4rem;
+  background-image: url(https://i.pinimg.com/236x/e5/c9/08/e5c9085606809c0bca2ef961f09f5ba3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 34px 34px 64px #bb102cd8, -35px -34px 64px #24c93aab;
+  z-index: -2;
+}
+.cont-texto {
+  position: absolute;
+  color: #171717;
+  height: 35rem;
+  width: 50%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4rem;
+  align-items: center;
+  text-align: center;
+  font-family: var(--negrita);
+  font-weight: 600;
+}
+
+.span2 {
+  color: red;
+  font-size: 6rem;
+  font-family: var(--negrita);
+  font-weight: bold;
+  -webkit-text-stroke: 03px black;
+  text-align: center;
+}
+.span1 {
+  font-size: 4rem;
+  font-family: var(--negrita);
+  font-weight: 600;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/994/331/728/holiday-christmas-ornaments-wallpaper-preview.jpg);
+  color: white;
+  /*-webkit-text-stroke: 4px white;*/
+  border-radius: 5px;
+  width: 23rem;
+  text-align: center;
+}
+.formulario {
+  height: 40%;
+  width: 70%;
+  /*background-color: #17181b;*/
+  background-image: url(https://i.pinimg.com/564x/65/96/39/6596390309a2a22fdbd60f9e00158281.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 40%;
+}
+.formulario fieldset {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(214, 205, 205);
+  font-family: var(--negrita);
+  border: none;
+  text-align: center;
+}
+.formulario fieldset input {
+  background-color: #171717;
+  color: white;
+  width: 70%;
+  font-weight: 400;
+  font-family: var(--negrita);
+  border: 1px solid gray;
+}
+
+.formulario fieldset .boton {
+  background-color: red;
+  border-radius: 2rem;
+  padding: 1rem;
+  color: white;
+  border: 1px solid black;
+  font-family: var(--boton);
+  font-weight: 700;
+  font-size: 1.3rem;
+  /* -webkit-text-stroke:  rgb(12, 6, 6);*/
+  text-transform: uppercase;
+  margin: 0.5rem;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-imgs {
+  width: 50%;
+  height: 35rem;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*mq antes de 810px*/
+@media (max-width: 825px) {
+  .cont-texto,
+  .cont-texto span {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .formulario {
+    position: relative;
+    font-size: small;
+    top: 55%;
+    left: -50%;
+    height: 35%;
+    width: 90%;
+  }
+
+  .span1,
+  .span2 {
+    width: max-content;
+  }
+
+  .formulario .cont-boton .boton {
+    height: 70%;
+    width: 70%;
+    font-size: medium;
+  }
+}
+@media (max-width: 575px) {
+}
+.bg-light {
+  background-color: #171717 !important;
+}
+.nav-item a {
+  color: rgb(124, 110, 110) !important;
+}
+main {
+  height: 100vh;
+}
+
+@media (max-width: 710px) {
+  .cont-texto {
+    width: 100%;
+    height: 55vh;
+  }
+  .cont-imgs {
+    width: 100%;
+    left: 0%;
+    top: 75vh;
+  }
+  .span2 {
+    font-size: 6rem !important;
+  }
+  .cont1,
+  .cont2 {
+    height: 20rem;
+    width: 17rem;
+  }
+  .formulario {
+    left: 0%;
+    width: 60%;
+    top: 50%;
+    margin-top: 2rem;
+  }
+}
